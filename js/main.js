@@ -84,7 +84,7 @@ document.getElementById('btn-rhombus').addEventListener('click', function(){
     const rhombusInputTwo = document.getElementById('rhombus-1').innerText;
     const rhombusInputTwoeString = parseFloat(rhombusInputTwo);
 
-    const rhombusInput = rhombusInputOneString * rhombusInputTwoeString;
+    const rhombusInput = 0.5 * rhombusInputOneString * rhombusInputTwoeString;
     const rhombus = document.getElementById('fourth-name').innerText;
 
     const container = document.getElementById("table");
@@ -109,7 +109,7 @@ document.getElementById('btn-pentagon').addEventListener('click', function(){
     const pentagonInputTwo = document.getElementById('rhombus-1').innerText;
     const pentagonInputTwoeString = parseFloat(pentagonInputTwo);
 
-    const rhombusInput = pentagonInputOneString * pentagonInputTwoeString;
+    const rhombusInput = 0.5 * pentagonInputOneString * pentagonInputTwoeString;
     const rhombus = document.getElementById('fourth-name').innerText;
 
     const container = document.getElementById("table");
@@ -126,4 +126,26 @@ document.getElementById('btn-pentagon').addEventListener('click', function(){
 
 // For Ellipse
 
+document.getElementById('btn-ellipse').addEventListener('click', function(){
+    serial = serial + 1;
+    const ellipseInputOne = document.getElementById('ellipse-1').innerText;
+    const ellipseInputOneString = parseFloat(ellipseInputOne);
+
+    const ellipseInputTwo = document.getElementById('ellipse-1').innerText;
+    const ellipseInputTwoeString = parseFloat(ellipseInputTwo);
+
+    const ellipseInput = 0.5 * ellipseInputOneString * ellipseInputTwoeString;
+    const ellipse = document.getElementById('last-name').innerText;
+
+    const container = document.getElementById("table");
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td>${serial}</td>
+      <td>${ellipse}</td>
+      <td>${ellipseInput}</td>
+      
+    `;
+    container.appendChild(tr);
+
+})
 
