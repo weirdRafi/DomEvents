@@ -98,3 +98,28 @@ document.getElementById('btn-rhombus').addEventListener('click', function(){
     container.appendChild(tr);
 
 })
+
+// For Pentagon
+
+document.getElementById('btn-pentagon').addEventListener('click', function(){
+    serial = serial + 1;
+    const pentagonInputOne = document.getElementById('rhombus-1').innerText;
+    const pentagonInputOneString = parseFloat(pentagonInputOne);
+
+    const pentagonInputTwo = document.getElementById('rhombus-1').innerText;
+    const pentagonInputTwoeString = parseFloat(pentagonInputTwo);
+
+    const rhombusInput = pentagonInputOneString * pentagonInputTwoeString;
+    const rhombus = document.getElementById('fourth-name').innerText;
+
+    const container = document.getElementById("table");
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td>${serial}</td>
+      <td>${rhombus}</td>
+      <td>${rhombusInput}</td>
+      
+    `;
+    container.appendChild(tr);
+
+})
