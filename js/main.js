@@ -134,7 +134,7 @@ document.getElementById('btn-ellipse').addEventListener('click', function(){
     const ellipseInputTwo = document.getElementById('ellipse-1').innerText;
     const ellipseInputTwoeString = parseFloat(ellipseInputTwo);
 
-    const ellipseInput = 0.5 * ellipseInputOneString * ellipseInputTwoeString;
+    const ellipseInput = 3.1416 * ellipseInputOneString * ellipseInputTwoeString;
     const ellipse = document.getElementById('last-name').innerText;
 
     const container = document.getElementById("table");
