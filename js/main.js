@@ -123,3 +123,7 @@ document.getElementById('btn-pentagon').addEventListener('click', function(){
     container.appendChild(tr);
 
 })
+
+// For Ellipse
+
+
