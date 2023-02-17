@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+        <div class="navbar bg-base-100 shadow-xl">
+            <div class="navbar-start">
+              <a class="btn btn-ghost normal-case text-xl">Interactive</a>
+            </div>
+            
+            <div class="navbar-end">
+              <a class="btn btn-primary">Blog</a>
+            </div>
+          </div>
+    </header>
+    <main>
+      <section class="lg:px-12 flex flex-col md:flex-row lg:flex-row">
+        <div
+          class="products-cetails w-full md:w-[60%] lg:w-[60%] mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+          <!-- first card  -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+                <img class="w-full h-40" src="images/triangle.png" alt="Rectangle" />
+              </figure>
+            <div class="card-body">
+              <h2 class="card-title" id="first-name">Triangle</h2>
+              <p>
+                Area (A) = 0.5 x b x h
+              </p>
+              <div>
+              <input id="triangle-1" class="input-1" type="text" placeholder="b">cm 
+              <input id="triangle-2" class="input-2" type="text" placeholder="h"> cm
+              </div>
+
+              <div class="card-actions justify-center">
+                <button id="btn-triangle" class="btn btn-primary" id="first-card">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- second card  -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+                <img class="w-full h-40" src="images/rectangle.png" alt="Rectangle" />
+              </figure>
+            <div class="card-body">
+              <h2 class="card-title" id="first-name">Rectangle</h2>
+              <p>
+                Area (A) = w x I
+              </p>
+              <div>
+              <input class="input-1" type="text" placeholder="W">cm 
+              <input class="input-2" type="text" placeholder="I"> cm
+              </div>
+
+              <div class="card-actions justify-center">
+                <button class="btn btn-primary" id="first-card">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- third card  -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+                <img class="w-full h-40" src="images/parallelogram.png" alt="Rectangle" />
+              </figure>
+            <div class="card-body">
+              <h2 class="card-title" id="first-name">Parallelogram</h2>
+              <p>
+                Area (A) = b x h
+              </p>
+              <div>
+              b = <span>10</span> cm , h = <span>12</span> cm
+              </div>
+
+              <div class="card-actions justify-center">
+                <button class="btn btn-primary" id="first-card">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- fourth card  -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+                <img class="w-full h-40" src="images/rhombus.png" alt="Rectangle" />
+              </figure>
+            <div class="card-body">
+              <h2 class="card-title" id="first-name">Rhombus</h2>
+              <p>
+                Area (A) = 0.5 x d <sub>1</sub> x d <sub>2</sub>
+              </p>
+              <div>
+                d<sub>1</sub> = <span>16</span> cm , d<sub>2</sub> = <span>8</span>
+              </div>
+
+              <div class="card-actions justify-center">
+                <button class="btn btn-primary" id="first-card">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- fifth card  -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img class="w-full h-40" src="images/pentagon.png" alt="" />
+            </figure>
+            <div class="card-body">
+                <h2 class="card-title" id="first-name">Pentagon</h2>
+                <p>
+                  Area (A) = 0.5b x p x b
+                </p>
+                <div>
+                p = <span>6</span> cm, b = <span>10</span> cm
+                </div>
+  
+                <div class="card-actions justify-center">
+                  <button class="btn btn-primary" id="first-card">
+                    Calculate
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- last card  -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img class="w-full h-40" src="images/ellipse.png" alt="" />
+            </figure>
+            <div class="card-body">
+                <h2 class="card-title" id="first-name">Ellipse</h2>
+                <p>
+                  Area (A) = PI ab
+                </p>
+                <div>
+                a = <span>10</span> cm, b = <span>4</span> cm
+                </div>
+  
+                <div class="card-actions justify-center">
+                  <button class="btn btn-primary" id="first-card">
+                    Calculate
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+
+        <!-- cart details div  -->
+        <div class="cart-details w-full md:w-[40%] lg:w-[40%] mx-auto">
+          <h1 class="text-3xl text-center font-bold underline mt-5">
+            Area Calculation
+          </h1>
+          <div class="overflow-x-auto">
+            <table class="table w-full">
+              
+              <tbody id="table">
+                <!-- <tr>
+                  <th>1</th>
+                  <td>Cy Ganderton</td>
+                  <td>Quality Control Specialist</td>
+                  <td>Blue</td>
+                </tr> -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>
